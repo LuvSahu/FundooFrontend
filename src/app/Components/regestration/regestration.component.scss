@@ -1,0 +1,125 @@
+.main {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #9c9c9c;
+    border-radius: 10px;
+    width: 650px;
+    padding: 56px;
+    height: auto;
+    background: #fff;
+    font-weight: 600;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+
+}
+.FundoNote-Logo{
+    display: flex;
+    font-weight: 600;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    padding-bottom: 5%;
+   
+}
+
+.Name {
+    display: flex;
+    gap: 10px;
+
+}
+
+.text{
+    color: #9c9c9c;
+    display: flex;
+    position: relative;
+
+}
+.mat-form-field{
+    padding: 10px 10px;
+}
+
+.mat-mdc-form-field-infix{
+    min-height: 10px;
+
+}
+
+input {
+    margin-top: 0.5rem;
+}
+
+
+.Password {
+    display: flex;
+    gap: 20px;
+    padding-top: 10%;
+}
+.Button1 {
+    display: table-cell;   
+    color: #1a73e8;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    margin-left: 10;
+    min-width: 80px;
+
+
+}
+
+// :placeholder-shown {
+//     display: block;
+//     width: 400px;
+//     padding: 0 20px;
+// }
+
+.Button{
+    display: flex;  
+    column-gap: 38%;
+    padding-top: 10%;
+    
+}
+
+.Check-ShowPass {
+    display: flex;
+    position: absolute;
+}
+
+.image {
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 65%;   
+    /*width:300px;
+    gap: 100px;
+    height: auto;*/
+    width: 244px;
+    aspect-ratio: auto 244 / 244;
+    height: auto;
+    
+}
+
+.NextButton{
+    display: table-cell;   
+    color: #1a73e8;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    margin-left: 10;
+    min-width: 80px;
+}
+
+.Next{
+    padding: 7px 20px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.img{
+    padding-top: 140%;
+    color: #9c9c9c;
+    margin-left: 20%;
+    font-size: 13px;
+}

@@ -1,0 +1,76 @@
+
+.main {
+    display: flex;
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #9c9c9c;
+    border-radius: 10px;
+    width: 350px;
+    padding: 56px;
+    height: auto;
+    background: #fff;
+    font-weight: 600;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+
+}
+.FundoNote-Logo{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+
+   
+}
+    
+.LogWelcome{
+    margin-left: 34%;
+    left: 43%;
+    padding-top: 10px;
+    font-weight: 7000;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    
+}
+
+.text{
+    margin-left: 22%;
+    font-weight: 7000;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+}
+.gmail-container .mat-form-field+.mat-form-field {
+    margin-left: 8px;
+}
+.Password .mat-form-field+.mat-form-field {
+    margin-left: 8px;
+    
+    
+}
+.ForgotPassword  {
+    display: table-cell;   
+    background-color: rgb(0, 60, 255);
+    color: rgb(0, 60, 255);
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    margin-left: 50;
+    min-width: 80px;
+
+
+}
+.Login {
+    transform: translate(-50%, -50%);
+    width: 100px;
+    background-color: rgb(0, 60, 255);
+    color: rgb(255, 255, 255);
+    border: 10px solid rgb(0, 60, 255);
+    border-radius: 4px;
+    font-size: 15px;
+    margin-left: 315px;
+    min-width: 80px;
+
+}

@@ -1,0 +1,110 @@
+<div class="main">
+    <div class="form">
+      <form class="" action="" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="Head">
+
+          <div class="FundoNote-Logo" style="font-size: x-large;">
+            <span style="color: #4285f4;">G</span>
+            <span style="color: #ea4335;">o</span>
+            <span style="color: #fbbc05;">o</span>
+            <span style="color: #4285f4;">g</span>
+            <span style="color: #34a853;">l</span>
+            <span style="color: #ea4335;">e</span>
+          </div>
+
+          <h1>Create your Google Account</h1>
+        </div>
+        <div class="Name">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>First Name</mat-label>
+              <input matInput placeholder="" formControlName="firstName" />
+              <mat-error>Enter First Name</mat-error>           
+             </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Last Name</mat-label>
+              <input matInput placeholder="" formControlName="lastName" />
+              <mat-error>Enter Last Name</mat-error>            
+            </mat-form-field>
+          </p>
+        </div>
+        <div class="gmail-container">
+          <mat-form-field appearance="outline" style="width: 95%;">
+            <mat-label>Username</mat-label>
+            <input matInput placeholder="" formControlName="email" />
+            <mat-error>Enter Username</mat-error>          
+        </mat-form-field>
+        </div>
+        <p class="text">  You can use letters,numbers & periods</p>
+        <button class="Button1">Use my current email address instead</button>
+        <div class="Password">
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="" formControlName="password" />
+              <mat-error>Enter Password</mat-error>           
+             </mat-form-field>
+          </p>
+          <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Confirm</mat-label>
+              <input matInput placeholder="" formControlName="confirmPassword" />
+              <mat-error>Enter Confirm Password</mat-error>           
+             </mat-form-field>
+          </p>
+        </div>
+        <p class="text">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+
+        <div class="Check-ShowPass">
+          <mat-checkbox class="example-margin">Show Password</mat-checkbox>
+        </div>
+        <div class="Button">
+          <button class="NextButton">Sign in instead</button>
+          <button class="Next">Next</button>
+          
+        </div>
+  
+    </form>
+  
+    </div>
+    <div class="LImage">
+      <img class="image" src="../../../assets/account.svg" alt="" >
+      <p class="img">One account. All of Google working for you</p>
+    </div>
+    
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
