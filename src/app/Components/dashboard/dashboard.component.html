@@ -1,0 +1,107 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-toolbar color=#202124 class="example-toolbar">
+                <!-- <button mat-icon-button (click)="snav.toggle()">
+                    <mat-icon class="btn">menu</mat-icon>
+                </button> -->
+                <!-- <i class='bx bx-menu'></i>
+                <span class="text"></span> -->
+                <a class="btn" href="#">
+                    <mat-icon class="btn">menu</mat-icon>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#">
+                            <img class="Img" src="../../../assets/icons/svgexport-23.png" alt="">
+                            <span class="nav-item">Notes</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img class="Img" src="../../../assets/icons/svgexport-24.png" alt="">
+                            <span class="nav-item">Reminder</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img class="Img" src="../../../assets/icons/svgexport-25.png" alt="">
+                            <span class="nav-item">Edit Label</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img class="Img" src="../../../assets/icons/svgexport-26.png" alt="">
+                            <span class="nav-item">Archive</span>
+                        </a></li>
+                        <li><a href="#">
+                            <img class="Img" src="../../../assets/icons/svgexport-27.png" alt="">
+                            <span class="nav-item">Trash</span>
+                        </a></li>
+                    </ul>
+                </nav>
+            
+        <div class="LImage">
+            <img class="image" src="../../../assets/keep_2020q4_48dp.png" alt="">
+        </div>
+        <h1 class="example-app-name">Fundoo</h1>
+        <!-- <div class="searchbox">
+
+            <img src="../../../assets/icons/search.svg" width="24px" height="24px" matPrefix>
+
+            <input type="text" placeholder="Search">
+
+        </div> -->
+
+    <div class="box">
+        <img src="../../../assets/icons/search.svg" width="24px" height="24px" matPrefix>
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+        <input type="text" name="" placeholder="Search">
+    </div>
+        <div style="padding-right: 350px;"></div>
+        <div class="icons">
+            <div>
+                <button class="imgrefresh" mat-flat-button>
+                    <img src="../../../assets/icons/refresh.svg" width="24px" height="24px"></button>
+            </div>
+            <div>
+                <button class="imggridview" mat-flat-button><img
+                        src="../../../assets/icons/grid_view_FILL0_wght400_GRAD0_opsz48.svg" width="24px"
+                        height="24px"></button>
+            </div>
+            <div>
+                <button class="imgsetting" mat-flat-button><img
+                        src="../../../assets/icons/settings_FILL0_wght400_GRAD0_opsz48.svg" width="24px"
+                        height="24px"></button>
+            </div>
+            <div>
+                <button class="imgapp" mat-flat-button><img src="../../../assets/icons/app.svg" width="24px"
+                        height="24px"></button>
+            </div>
+            <div>
+                <button class="imgperson" mat-flat-button><img src="../../../assets/icons/person.svg" width="24px"
+                        height="24px"></button>
+            </div>
+        </div>
+
+    </mat-toolbar>
+
+    <!-- <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+        <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+            fixedTopGap="56">
+            <mat-nav-list class="sidenav">
+                <a mat-list-item routerLink="">
+                    <img class="icon" src="../../../assets/icons/svgexport-23.png" alt="notes">
+                    Notes</a>
+                <a mat-list-item>
+                    <img class="icon" src="../../../assets/icons/svgexport-24.png" alt="Reminder">
+                    Reminder</a>
+                <a mat-list-item>
+                    <img class="icon" src="../../../assets/icons/svgexport-25.png" alt="Edit Lable">
+                    Edit Lable</a>
+                <a mat-list-item routerLink="">
+                    <img class="icon" src="../../../assets/icons/svgexport-26.png" alt="Archive">
+                    Archive</a>
+                <a mat-list-item routerLink="">
+                    <img class="icon" src="../../../assets/icons/svgexport-27.png" alt="Trash">
+                    Trash</a>
+            </mat-nav-list>
+        </mat-sidenav> -->
+
+
+    <!-- </mat-sidenav-container> -->
+    <router-outlet></router-outlet>
+   
+</div>

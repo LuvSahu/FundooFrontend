@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    
+}
+
+.note {
+    
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgb(204, 201, 201);
+    width: 600px;
+    height: auto;
+    border: 2px solid rgb(218, 213, 213);
+}
+
+.title { 
+    font-size: 15px;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+    height: 20px;
+
+}
+
+.Takenote {
+    padding-left: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+    width: 75%;
+    height: 30px;
+}
+
+.close {
+    left: 530px;
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+input {
+    border: 0;
+    outline: 0;
+}
+
+.pinbutton {
+       left: 535px;
+       border-radius: 100%;
+}
+
+.imgtitle{
+    background-color: transparent;
+}

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +14,14 @@ import { ForgotPasswordComponent } from './Components/forgot-password/forgot-pas
 import { ForgotEmailComponent } from './Components/forgot-email/forgot-email.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import { CreateNoteComponent } from './Components/create-note/create-note.component';
+import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
+import { DisplayNotesComponent } from './Components/display-notes/display-notes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +29,12 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     RegestrationComponent,
     ForgotPasswordComponent,
-    ForgotEmailComponent
+    ForgotEmailComponent,
+    DashboardComponent,
+    CreateNoteComponent,
+    GetAllNotesComponent,
+    DisplayNotesComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -34,7 +46,12 @@ import { HttpClientModule } from '@angular/common/http';
     MatCheckboxModule,
     ReactiveFormsModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

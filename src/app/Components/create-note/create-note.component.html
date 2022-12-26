@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="note" [formGroup]="noteform">
+        <div *ngIf="isShow" >
+            <input class="title" placeholder="Title" formControlName="title">
+            <a mat-list-item>
+                <button class="pinbutton" mat-flat-button><img src="../../../assets/icons/download.svg" width="24px"
+                        height="24px"></button>
+            </a>
+        </div>
+        <div *ngIf="!isShow || isShow" (click)="show()" >
+            <input class="Takenote" placeholder="Take a note ..." formControlName="description" >
+            <span *ngIf="!isShow" class="imgtitle">
+                
+                    <img style="padding-top: 10px; margin-right: 35px;" src="../../../assets/icons/svgexport-40.png"
+                        width="20px" height="20px">
+                    <img style="padding-top: 10px; margin-right: 25px;" src="../../../assets/icons/svgexport-41.png"
+                        width="20px" height="20px">
+                    <img style="padding-top: 10px;" src="../../../assets/icons/svgexport-17.png" width="20px"
+                        height="20px">
+                
+            </span>
+        </div>
+        <div *ngIf="isShow">
+            <div>
+                <button class="close" (click)="close()" mat-flat-button>Close</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
