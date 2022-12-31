@@ -20,7 +20,11 @@
                 
             </span>
         </div>
-        <div *ngIf="isShow">
+        <div *ngIf="isShow" >
+            <div class="icons">
+                <app-icons></app-icons>
+
+            </div>
             <div>
                 <button class="close" (click)="close()" mat-flat-button>Close</button>
             </div>

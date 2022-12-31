@@ -1,1 +1,48 @@
-<p>icons works!</p>
+<div class="icons">
+        <div class="Limages" id="alert" mat-flat-button>
+
+                <img src="../../../assets/icons/alert.svg" width="18px" height="18px">
+                <span class="tooltiptext">Remind me</span>
+
+        </div>
+        <div class="Limages" id="collab" mat-flat-button>
+
+                <img src="../../../assets/icons/collabrator.svg" width="18px" height="18px">
+                <span class="tooltiptext">Collabrator</span>
+
+        </div>
+        <div class="Limages" id="palette" mat-flat-button>
+
+                <img src="../../../assets/icons/palette.svg" width="18px" height="18px">
+                <span class="tooltiptext">Background options</span>
+
+        </div>
+        <div class="Limages" id="image" mat-flat-button>
+
+                <img src="../../../assets/icons/image.svg" width="18px" height="18px">
+                <span class="tooltiptext">Add image</span>
+
+        </div>
+        <div class="Limages" id="archive" mat-flat-button>
+
+                <img (click)="Archive()" src="../../../assets/icons/archive.svg" width="18px" height="18px">
+                <span class="tooltiptext">Archive</span>
+
+        </div>
+        <div [matMenuTriggerFor]="menu">
+                <div class="Limages" id="more" mat-flat-button>
+
+                        <img src="../../../assets/icons/more.svg" width="18px" height="18px">
+                        <span class="tooltiptext">More</span>
+
+                </div>
+
+                <mat-menu #menu="matMenu">
+                        <button mat-menu-item (click)="Trash()">Delete note</button>
+                        <button mat-menu-item>Add drawing</button>
+                        <button mat-menu-item>Make a copy</button>
+                        <button mat-menu-item>Show checkboxes</button>
+                        <button mat-menu-item>Copy to google Docs</button>
+                </mat-menu>
+        </div>
+</div>

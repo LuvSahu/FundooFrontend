@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="note">
+        <a mat-list-item>
+            <button class="pinbutton" mat-flat-button><img src="../../../assets/icons/download.svg" width="24px"
+                    height="24px"></button>
+        </a>
+        <div>
+            <input class="title" placeholder="Title" matInput mat-dialog-title [(ngModel)]="title">
+        </div>
+
+        <div>
+            <input class="Takenote" placeholder="Description" matInput mat-dialog-title [(ngModel)]="description">
+        </div>
+        <div class="icons">
+            <app-icons></app-icons>
+        </div>
+        <button class="close" (click)="onNoClick()">Close</button>
+
+    </div>
+</div>

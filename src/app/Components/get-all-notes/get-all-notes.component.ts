@@ -8,7 +8,7 @@ import { NoteservicesService } from 'src/app/Services/noteservices/noteservices.
 })
 export class GetAllNotesComponent implements OnInit {
 
-  notes = []
+  notes=[]
   constructor(private note : NoteservicesService) { }
 
   ngOnInit(): void {

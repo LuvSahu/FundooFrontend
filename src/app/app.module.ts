@@ -22,6 +22,11 @@ import {MatListModule} from '@angular/material/list';
 import { CreateNoteComponent } from './Components/create-note/create-note.component';
 import { GetAllNotesComponent } from './Components/get-all-notes/get-all-notes.component';
 import { DisplayNotesComponent } from './Components/display-notes/display-notes.component';
+import {MatCardModule} from '@angular/material/card';
+import { UpdateComponent } from './update/update.component';
+import { IconsComponent } from './Components/icons/icons.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,10 @@ import { DisplayNotesComponent } from './Components/display-notes/display-notes.
     DashboardComponent,
     CreateNoteComponent,
     GetAllNotesComponent,
-    DisplayNotesComponent
+    DisplayNotesComponent,
+    UpdateComponent,
+    IconsComponent
+    
     
   ],
   imports: [
@@ -50,7 +58,10 @@ import { DisplayNotesComponent } from './Components/display-notes/display-notes.
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatCardModule,
+    MatDialogModule,
+    MatMenuModule
 
   ],
   providers: [],

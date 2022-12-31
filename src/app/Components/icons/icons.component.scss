@@ -1,0 +1,41 @@
+.Limages {
+    justify-content: center;
+    // align-items:center;
+    background-color: transparent;
+    border-radius: 100%;
+    margin: 10x;
+    // top: 20%;
+    left: 0;
+    padding: 12px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+  
+  .Limages .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(53, 51, 51);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .Limages:hover .tooltiptext {
+    visibility: visible;
+  }

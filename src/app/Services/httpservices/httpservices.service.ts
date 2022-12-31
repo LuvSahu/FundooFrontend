@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpservicesService {
-  baseUrl="https://localhost:44314/api";
+  baseUrl="https://localhost:44386/api";
 
 
   constructor(private httpClient: HttpClient) { }
@@ -21,6 +21,10 @@ putService(url:string,reqdata:any,token: boolean=false,httpOptions:any={}){
 getService(url:string,token: boolean=false,httpOptions:any={}){
   return this.httpClient.get(this.baseUrl+url,token&&httpOptions)
 
+}
+
+deleteService(url:string,token: boolean = false,httpOptions: any = {}) {
+  return this.httpClient.delete(this.baseUrl+url, token&&httpOptions)
 }
 
 }

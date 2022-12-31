@@ -1,0 +1,47 @@
+.card{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 150px;
+    border-radius: 20px;
+    border: 2px solid rgb(177, 168, 168);
+    margin-left: 15px;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    flex-wrap: wrap;
+    margin-left: 180px;
+
+  }
+
+  .icons{
+    margin-top: 10px;
+  }
+
+  
+
+.title{
+   width: 200px;
+   padding-left: 16px;
+   padding-bottom: 5px;
+   margin-top: -37px;
+//    margin-bottom: 10px;
+}
+
+.description{
+    padding-left: 1px;
+    padding-bottom: 5px;
+}
+
+
+.pinbutton{
+    left: 180px;
+    border-radius: 50%;
+    top: 5px;
+}
+
+
+    
