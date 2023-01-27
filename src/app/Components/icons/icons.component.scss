@@ -9,6 +9,7 @@
     padding: 12px;
     position: relative;
     cursor: pointer;
+    padding-top: 20px;
 
 }
 
@@ -38,4 +39,20 @@
   
   .Limages:hover .tooltiptext {
     visibility: visible;
+  }
+
+  .colorBox{
+    padding: 1px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 7px;
+   
+  }
+  .colors{
+    height: 40px; 
+    width:40px; 
+    border-radius: 35px;
+    
   }

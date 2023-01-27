@@ -3,7 +3,7 @@
     margin-bottom: 20px;
     width: 250px;
     height: 150px;
-    border-radius: 20px;
+    border-radius: 8px;
     border: 2px solid rgb(177, 168, 168);
     margin-left: 15px;
   }
@@ -38,9 +38,14 @@
 
 
 .pinbutton{
-    left: 180px;
-    border-radius: 50%;
+    // left: 480px;
+    // border-radius: 50%;
+    padding-left: 200px;
     top: 5px;
+    // border: none;
+    // border-radius: 0%;
+    padding-top: 8px;
+    cursor: pointer;
 }
 
 

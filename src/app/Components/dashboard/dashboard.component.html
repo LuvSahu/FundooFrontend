@@ -10,7 +10,7 @@
                 </a>
                 <nav>
                     <ul>
-                        <li><a href="#">
+                        <li><a (click) = "notes()">
                             <img class="Img" src="../../../assets/icons/svgexport-23.png" alt="">
                             <span class="nav-item">Notes</span>
                         </a></li>
@@ -22,13 +22,17 @@
                             <img class="Img" src="../../../assets/icons/svgexport-25.png" alt="">
                             <span class="nav-item">Edit Label</span>
                         </a></li>
-                        <li><a href="#">
+                        <li><a>
+                            <div (click) = "archive()">
                             <img class="Img" src="../../../assets/icons/svgexport-26.png" alt="">
                             <span class="nav-item">Archive</span>
+                        </div>
                         </a></li>
-                        <li><a href="#">
+                        <li><a>
+                            <div  (click)= "trash()">
                             <img class="Img" src="../../../assets/icons/svgexport-27.png" alt="">
                             <span class="nav-item">Trash</span>
+                        </div>
                         </a></li>
                     </ul>
                 </nav>
@@ -72,7 +76,9 @@
             </div>
             <div>
                 <button class="imgperson" mat-flat-button><img src="../../../assets/icons/person.svg" width="24px"
-                        height="24px"></button>
+                        height="24px">
+                        <span class="tooltiptext">Log Out</span>
+                    </button>
             </div>
         </div>
 

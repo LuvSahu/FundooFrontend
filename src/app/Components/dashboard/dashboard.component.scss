@@ -163,4 +163,27 @@
     width: 600px;
   }  
 
+  .imgperson .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: rgb(53, 51, 51);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .imgperson:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
   

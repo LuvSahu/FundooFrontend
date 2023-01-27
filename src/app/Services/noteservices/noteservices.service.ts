@@ -40,7 +40,7 @@ getAllNotes(){
 }
 
 updateNote(reqdata: any) {
-  console.log(reqdata.notesID)
+  console.log(reqdata.noteid)
     console.log("token", this.token)
  
     let header = {
@@ -52,10 +52,12 @@ updateNote(reqdata: any) {
     return this.httpService.putService(`/Notes/Update?noteid=${reqdata.noteid}`, reqdata, true, header)
   }
 
-  deleteNote( noteid: any) {
-    console.log(noteid)
-    console.log("token", this.token)
-  
+  deleteNote( reqdata: any) {
+    // console.log(noteid)
+    // console.log("token", this.token)
+    // console.log(reqdata)
+    console.log(reqdata.noteid)
+
     let header = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
@@ -63,7 +65,7 @@ updateNote(reqdata: any) {
       })
     }
     
-    return this.httpService.deleteService(`/Notes/Delete?noteid=${noteid}`,true, header)
+    return this.httpService.putService(`/Notes/Trash?noteid=${reqdata.noteid}`,reqdata,true, header)
   }
 
   archivenote(reqdata:any){
@@ -80,6 +82,17 @@ updateNote(reqdata: any) {
 
     }
 
+    colorPallete(reqdata:any){
+      console.log(reqdata)
+
+      let header = {
+        headers: new HttpHeaders({
+          'Content-Type' : 'application/json',
+          'Authorization' : 'Bearer ' + this.token
+        })
+    }
+
+    return this.httpService.putService(`/Notes/Color?NotesID=${reqdata.NotesID}&${reqdata.Color}`,reqdata,true,header)
   }
 
-
+}

@@ -27,7 +27,9 @@ import { UpdateComponent } from './update/update.component';
 import { IconsComponent } from './Components/icons/icons.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
-
+import { TrashComponent } from './Components/trash/trash.component';
+import { ArchiveComponent } from './Components/archive/archive.component';
+import { AuthguardservicesService } from './Services/authservices/authguardservices.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,9 @@ import {MatMenuModule} from '@angular/material/menu';
     GetAllNotesComponent,
     DisplayNotesComponent,
     UpdateComponent,
-    IconsComponent
+    IconsComponent,
+    TrashComponent,
+    ArchiveComponent
     
     
   ],
@@ -64,7 +68,9 @@ import {MatMenuModule} from '@angular/material/menu';
     MatMenuModule
 
   ],
-  providers: [],
+  providers: [
+    AuthguardservicesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

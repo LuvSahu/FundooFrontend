@@ -23,8 +23,8 @@ getService(url:string,token: boolean=false,httpOptions:any={}){
 
 }
 
-deleteService(url:string,token: boolean = false,httpOptions: any = {}) {
-  return this.httpClient.delete(this.baseUrl+url, token&&httpOptions)
-}
+// deleteService(url:string,token: boolean = false,httpOptions: any = {}) {
+//   return this.httpClient.delete(this.baseUrl+url, token&&httpOptions)
+// }
 
 }

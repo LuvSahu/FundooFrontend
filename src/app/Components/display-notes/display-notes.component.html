@@ -1,10 +1,11 @@
 <div class="container">
     <div *ngFor="let note of messages" class="card-contain">
         <div class="items">
-            <mat-card class="card">
+            <mat-card class="card" [style.background]="note.color">
                 <a mat-list-item>
-                    <button class="pinbutton" mat-flat-button><img src="../../../assets/icons/download.svg" width="24px"
-                            height="24px"></button>
+                    <!-- <button  mat-flat-button></button> -->
+                    <img class="pinbutton" src="../../../assets/icons/download.svg" width="24px"
+                            height="24px">
                 </a>
                     <mat-card-title class="title" (click)="openDialog(note)">{{note.title}}</mat-card-title>
                     <mat-card-content>
@@ -14,7 +15,7 @@
                         </div> -->
                     </mat-card-content>
                     <div class="icons">
-                    <app-icons [notedata]="note"></app-icons>
+                    <app-icons [notedata]="note" (refresh)="receiveTrashMessage($event)"></app-icons>
                 </div>
             </mat-card>
         </div>

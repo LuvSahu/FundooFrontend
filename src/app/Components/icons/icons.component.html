@@ -11,11 +11,23 @@
                 <span class="tooltiptext">Collabrator</span>
 
         </div>
-        <div class="Limages" id="palette" mat-flat-button>
+        <div [matMenuTriggerFor]="color">
+                <div class="Limages" id="palette" mat-flat-button>
 
-                <img src="../../../assets/icons/palette.svg" width="18px" height="18px">
-                <span class="tooltiptext">Background options</span>
+                        <img src="../../../assets/icons/palette.svg" width="18px" height="18px">
+                        <span class="tooltiptext">Background options</span>
 
+                </div>
+
+                <mat-menu #color="matMenu" >
+                        <div style="padding-left: 4px;" class="colorBox">
+                                <div *ngFor="let color of colorsArr" >
+                                        <div class="colors"
+                                                [style.background]="color.code"
+                                                (click)="changeColor(color.name)"></div>
+                                </div>
+                        </div>
+                </mat-menu>
         </div>
         <div class="Limages" id="image" mat-flat-button>
 

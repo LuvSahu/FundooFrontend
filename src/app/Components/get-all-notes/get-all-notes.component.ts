@@ -19,13 +19,19 @@ export class GetAllNotesComponent implements OnInit {
     this.note.getAllNotes().subscribe((response : any) =>
     {
       console.log(response);
-      this.notes = response.data
+      this.notes= response.data
       console.log(this.notes);
+      this.notes.reverse();
+      this.notes = this.notes.filter((notesdata: any) =>{
+         return notesdata.trash == false && notesdata.archive == false;
+      })
     })
 
   }
 
-  
+  receiveNotesMessage($event:any){
+       this.getNotes();
+  }
 
 }
 

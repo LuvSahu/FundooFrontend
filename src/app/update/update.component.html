@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="note">
+    <div class="note" [style.background]="data.color">
         <a mat-list-item>
             <button class="pinbutton" mat-flat-button><img src="../../../assets/icons/download.svg" width="24px"
                     height="24px"></button>
@@ -12,7 +12,7 @@
             <input class="Takenote" placeholder="Description" matInput mat-dialog-title [(ngModel)]="description">
         </div>
         <div class="icons">
-            <app-icons></app-icons>
+            <app-icons [notedata]="data"></app-icons>
         </div>
         <button class="close" (click)="onNoClick()">Close</button>
 
